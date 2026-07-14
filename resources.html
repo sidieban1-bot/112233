@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>巡检任务台账｜低空巡检工单台账平台</title>
+<link rel="stylesheet" href="assets/style.css" />
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrapper nav">
+    <a class="logo" href="index.html"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></a>
+    <nav class="navlinks"><a class="" href="index.html">产品首页</a><a class="" href="dashboard.html">运营总览</a><a class="active" href="tasks.html">任务台账</a><a class="" href="hazards.html">隐患工单</a><a class="" href="resources.html">资源池</a><a class="" href="data.html">数据档案</a><a class="" href="reports.html">效能报表</a><a class="" href="pricing.html">试点与定价</a></nav>
+    <a class="btn primary" href="dashboard.html">进入演示系统</a>
+  </div>
+</header>
+
+
+<main class="wrapper">
+  <section class="page-title"><div class="kicker">TASK LEDGER</div><h1>巡检任务台账</h1><p>每一次飞行不再只是一次“飞过”，而是一张可追踪、可复盘、可归档的巡检任务单。</p></section>
+  <div class="layout">
+    <aside class="sidebar"><a class="side-link " href="dashboard.html"><span>📊</span>运营总览</a><a class="side-link active" href="tasks.html"><span>🧾</span>巡检任务台账</a><a class="side-link " href="hazards.html"><span>⚠️</span>隐患工单管理</a><a class="side-link " href="resources.html"><span>🚁</span>资源池管理</a><a class="side-link " href="data.html"><span>🗂️</span>数据档案库</a><a class="side-link " href="reports.html"><span>📈</span>效能报表</a><a class="side-link " href="pricing.html"><span>💼</span>试点与定价</a></aside>
+    <section class="main-panel">
+      <div class="card">
+        <h3>新建巡检任务单</h3>
+        <div class="form-row">
+          <input class="input" value="河道巡检｜北岸 3 公里" />
+          <input class="input" value="场景：河道监测" />
+          <input class="input" value="责任飞手：张航" />
+          <input class="input" value="航线模板：HD-04" />
+        </div>
+        <div style="margin-top:14px"><button class="btn primary" onclick="createTask()">生成任务单</button></div>
+      </div>
+      <div class="table-card">
+        <div class="table-head"><h3>任务台账列表</h3><span class="tag">任务下发 → 执行 → 归档</span></div>
+        <table><thead><tr><th>任务编号</th><th>巡检场景</th><th>区域/航线</th><th>飞手</th><th>无人机</th><th>状态</th><th>隐患数</th></tr></thead>
+        <tbody>
+          <tr><td>LX-2026-0714-001</td><td>河道监测</td><td>北岸 HD-04</td><td>张航</td><td>DJ-07</td><td><span class="badge ok">已完成</span></td><td>2</td></tr>
+          <tr><td>LX-2026-0714-002</td><td>市容治理</td><td>人民路 SR-02</td><td>李舟</td><td>DJ-03</td><td><span class="badge info">执行中</span></td><td>--</td></tr>
+          <tr><td>LX-2026-0714-003</td><td>园区安防</td><td>A 区 YQ-01</td><td>王铭</td><td>DJ-12</td><td><span class="badge warn">待执行</span></td><td>--</td></tr>
+          <tr><td>LX-2026-0713-018</td><td>工地扬尘</td><td>南环 GD-09</td><td>陈可</td><td>DJ-09</td><td><span class="badge ok">已归档</span></td><td>4</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrapper footer-grid">
+    <div>
+      <div class="logo"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></div>
+      <p style="margin-top:12px">把“飞行行为”变成“治理流程”，把“现场照片”变成“隐患工单”。</p>
+    </div>
+    <div>演示日期：<span data-date></span><br/>适用场景：区县城管 / 河道巡检 / 园区运维 / 第三方巡检服务商</div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

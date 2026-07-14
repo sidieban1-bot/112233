@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>试点与定价｜低空巡检工单台账平台</title>
+<link rel="stylesheet" href="assets/style.css" />
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrapper nav">
+    <a class="logo" href="index.html"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></a>
+    <nav class="navlinks"><a class="" href="index.html">产品首页</a><a class="" href="dashboard.html">运营总览</a><a class="" href="tasks.html">任务台账</a><a class="" href="hazards.html">隐患工单</a><a class="" href="resources.html">资源池</a><a class="" href="data.html">数据档案</a><a class="" href="reports.html">效能报表</a><a class="active" href="pricing.html">试点与定价</a></nav>
+    <a class="btn primary" href="dashboard.html">进入演示系统</a>
+  </div>
+</header>
+
+
+<main class="wrapper">
+  <section class="page-title"><div class="kicker">PILOT & BUSINESS MODEL</div><h1>试点方案与商业模型测试</h1><p>先用最小可行产品验证需求，再根据客户类型扩展功能和付费模式。</p></section>
+  <div class="layout">
+    <aside class="sidebar"><a class="side-link " href="dashboard.html"><span>📊</span>运营总览</a><a class="side-link " href="tasks.html"><span>🧾</span>巡检任务台账</a><a class="side-link " href="hazards.html"><span>⚠️</span>隐患工单管理</a><a class="side-link " href="resources.html"><span>🚁</span>资源池管理</a><a class="side-link " href="data.html"><span>🗂️</span>数据档案库</a><a class="side-link " href="reports.html"><span>📈</span>效能报表</a><a class="side-link active" href="pricing.html"><span>💼</span>试点与定价</a></aside>
+    <section class="main-panel">
+      <div class="pricing">
+        <div class="price-card">
+          <h3>基础版</h3><p>适合小园区、第三方巡检团队。</p><div class="price">1-3万<small>/年</small></div>
+          <div class="check">巡检任务台账</div><div class="check">隐患工单</div><div class="check">图片/视频归档</div><div class="check">基础报表</div>
+        </div>
+        <div class="price-card featured">
+          <h3>专业版</h3><p>适合大型园区、区县级试点。</p><div class="price">5-15万<small>/年</small></div>
+          <div class="check">基础版全部功能</div><div class="check">无人机资源池</div><div class="check">飞手排班与航线模板</div><div class="check">效能报表与月报导出</div>
+        </div>
+        <div class="price-card">
+          <h3>定制版</h3><p>适合政府、国企、总包单位。</p><div class="price">20-50万<small>/首年</small></div>
+          <div class="check">专业版全部功能</div><div class="check">私有化部署</div><div class="check">政务工单/飞控接口对接</div><div class="check">多部门权限与定制报表</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>三个月最小可行试点</h3>
+        <div class="flow">
+          <div class="step"><div class="no">第1月</div><strong>建台账</strong><p>选定河道或市容巡检，建立任务单和隐患工单。</p></div>
+          <div class="step"><div class="no">第2月</div><strong>跑闭环</strong><p>完成整改、复查、销号流程，记录基线指标。</p></div>
+          <div class="step"><div class="no">第3月</div><strong>出报告</strong><p>输出月度运营报告，验证闭环率、利用率和处置时长。</p></div>
+          <div class="step"><div class="no">验证</div><strong>客户访谈</strong><p>确认是否愿意付费、愿意先在哪个场景使用。</p></div>
+          <div class="step"><div class="no">交付</div><strong>模板沉淀</strong><p>形成场景模板、字段规范和运营手册。</p></div>
+          <div class="step"><div class="no">复制</div><strong>扩展场景</strong><p>从单部门试点扩展到园区、河道、市容、应急。</p></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>明天商业测试建议问题</h3>
+        <p>不要只问“产品怎么样”，要问：现在任务用微信群还是系统管理？隐患有没有正式工单？复查销号有没有记录？无人机是否闲置？领导最关心哪些报表？更接受年费订阅还是一次性交付加运维费？可接受试点预算在 1-3 万、5-15 万还是 20 万以上？</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrapper footer-grid">
+    <div>
+      <div class="logo"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></div>
+      <p style="margin-top:12px">把“飞行行为”变成“治理流程”，把“现场照片”变成“隐患工单”。</p>
+    </div>
+    <div>演示日期：<span data-date></span><br/>适用场景：区县城管 / 河道巡检 / 园区运维 / 第三方巡检服务商</div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

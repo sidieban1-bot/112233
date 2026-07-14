@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>隐患工单管理｜低空巡检工单台账平台</title>
+<link rel="stylesheet" href="assets/style.css" />
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrapper nav">
+    <a class="logo" href="index.html"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></a>
+    <nav class="navlinks"><a class="" href="index.html">产品首页</a><a class="" href="dashboard.html">运营总览</a><a class="" href="tasks.html">任务台账</a><a class="active" href="hazards.html">隐患工单</a><a class="" href="resources.html">资源池</a><a class="" href="data.html">数据档案</a><a class="" href="reports.html">效能报表</a><a class="" href="pricing.html">试点与定价</a></nav>
+    <a class="btn primary" href="dashboard.html">进入演示系统</a>
+  </div>
+</header>
+
+
+<main class="wrapper">
+  <section class="page-title"><div class="kicker">HAZARD TICKETS</div><h1>隐患工单管理</h1><p>把“现场照片”变成“有编号、有责任、有期限、有复查结果”的隐患工单。</p></section>
+  <div class="layout">
+    <aside class="sidebar"><a class="side-link " href="dashboard.html"><span>📊</span>运营总览</a><a class="side-link " href="tasks.html"><span>🧾</span>巡检任务台账</a><a class="side-link active" href="hazards.html"><span>⚠️</span>隐患工单管理</a><a class="side-link " href="resources.html"><span>🚁</span>资源池管理</a><a class="side-link " href="data.html"><span>🗂️</span>数据档案库</a><a class="side-link " href="reports.html"><span>📈</span>效能报表</a><a class="side-link " href="pricing.html"><span>💼</span>试点与定价</a></aside>
+    <section class="main-panel">
+      <div class="kpi-row">
+        <div class="kpi"><small>本月隐患</small><div class="value">86</div><small>较上月 -8%</small></div>
+        <div class="kpi"><small>待派发</small><div class="value">9</div><small>需确认责任部门</small></div>
+        <div class="kpi"><small>超期工单</small><div class="value">3</div><small>已触发提醒</small></div>
+        <div class="kpi"><small>复查通过</small><div class="value">64</div><small>自动归档</small></div>
+      </div>
+      <div class="table-card">
+        <div class="table-head"><h3>隐患工单台账</h3><button class="btn" onclick="closeTicket()">复查销号演示</button></div>
+        <table><thead><tr><th>工单编号</th><th>隐患类型</th><th>位置</th><th>风险等级</th><th>责任方</th><th>状态</th><th>截止</th></tr></thead>
+        <tbody>
+          <tr><td>HY-2026-051</td><td>河道漂浮物</td><td>北岸 1.8km</td><td><span class="badge warn">较重</span></td><td>水务运维</td><td><span class="badge danger">已超期</span></td><td>07-13</td></tr>
+          <tr><td>HY-2026-052</td><td>疑似违建</td><td>人民路东段</td><td><span class="badge danger">严重</span></td><td>城管二队</td><td><span class="badge warn">待复查</span></td><td>07-14</td></tr>
+          <tr><td>HY-2026-053</td><td>垃圾堆放</td><td>A 区北门</td><td><span class="badge info">一般</span></td><td>园区物业</td><td><span class="badge info">整改中</span></td><td>07-15</td></tr>
+          <tr><td>HY-2026-054</td><td>道路积水</td><td>南环辅路</td><td><span class="badge info">一般</span></td><td>市政养护</td><td><span class="badge ok">已销号</span></td><td>07-12</td></tr>
+        </tbody></table>
+      </div>
+      <div class="card"><h3>工单字段标准</h3><p>隐患编号、隐患类型、风险等级、发现时间、空间位置、现场证据、责任部门、整改时限、复查记录、销号状态。字段统一后，照片和台账才可以被复用。</p></div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrapper footer-grid">
+    <div>
+      <div class="logo"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></div>
+      <p style="margin-top:12px">把“飞行行为”变成“治理流程”，把“现场照片”变成“隐患工单”。</p>
+    </div>
+    <div>演示日期：<span data-date></span><br/>适用场景：区县城管 / 河道巡检 / 园区运维 / 第三方巡检服务商</div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

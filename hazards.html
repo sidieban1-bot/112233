@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>运营总览｜低空巡检工单台账平台</title>
+<link rel="stylesheet" href="assets/style.css" />
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrapper nav">
+    <a class="logo" href="index.html"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></a>
+    <nav class="navlinks"><a class="" href="index.html">产品首页</a><a class="active" href="dashboard.html">运营总览</a><a class="" href="tasks.html">任务台账</a><a class="" href="hazards.html">隐患工单</a><a class="" href="resources.html">资源池</a><a class="" href="data.html">数据档案</a><a class="" href="reports.html">效能报表</a><a class="" href="pricing.html">试点与定价</a></nav>
+    <a class="btn primary" href="dashboard.html">进入演示系统</a>
+  </div>
+</header>
+
+
+<main class="wrapper">
+  <section class="page-title"><div class="kicker">DASHBOARD</div><h1>运营总览</h1><p>管理者一眼看到今天有没有巡、隐患有没有改、设备有没有闲置、结果能不能汇报。</p></section>
+  <div class="layout">
+    <aside class="sidebar"><a class="side-link active" href="dashboard.html"><span>📊</span>运营总览</a><a class="side-link " href="tasks.html"><span>🧾</span>巡检任务台账</a><a class="side-link " href="hazards.html"><span>⚠️</span>隐患工单管理</a><a class="side-link " href="resources.html"><span>🚁</span>资源池管理</a><a class="side-link " href="data.html"><span>🗂️</span>数据档案库</a><a class="side-link " href="reports.html"><span>📈</span>效能报表</a><a class="side-link " href="pricing.html"><span>💼</span>试点与定价</a></aside>
+    <section class="main-panel">
+      <div class="kpi-row">
+        <div class="kpi"><small>今日任务</small><div class="value count" data-target="18">0</div><small>其中 14 项已完成</small></div>
+        <div class="kpi"><small>待整改隐患</small><div class="value count" data-target="27">0</div><small>超期 3 项</small></div>
+        <div class="kpi"><small>整改闭环率</small><div class="value count" data-target="94" data-suffix="%">0</div><small>较上月 +11%</small></div>
+        <div class="kpi"><small>设备利用率</small><div class="value count" data-target="76" data-suffix="%">0</div><small>闲置设备 4 架</small></div>
+      </div>
+      <div class="split">
+        <div class="card"><h3>本周任务趋势</h3><div class="chart"><div class="bar" style="height:45%"><span>周一</span></div><div class="bar" style="height:65%"><span>周二</span></div><div class="bar" style="height:52%"><span>周三</span></div><div class="bar" style="height:78%"><span>周四</span></div><div class="bar" style="height:88%"><span>周五</span></div><div class="bar" style="height:56%"><span>周六</span></div></div></div>
+        <div class="card"><h3>今日运行动态</h3><div class="timeline">
+          <div class="time-item"><div class="time">09:20</div><div class="box">河道巡检 LX-073 已完成，发现漂浮物 2 处。</div></div>
+          <div class="time-item"><div class="time">10:45</div><div class="box">园区安防任务进入复查阶段，责任人已上传整改照片。</div></div>
+          <div class="time-item"><div class="time">14:10</div><div class="box">市容巡检新增超期提醒：HY-2026-051。</div></div>
+        </div></div>
+      </div>
+      <div class="table-card">
+        <div class="table-head"><h3>重点待办</h3><button class="btn" onclick="exportReport()">导出日报</button></div>
+        <table><thead><tr><th>事项</th><th>场景</th><th>状态</th><th>责任方</th><th>截止时间</th></tr></thead>
+        <tbody>
+          <tr><td>疑似违建复查</td><td>市容巡查</td><td><span class="badge warn">待复查</span></td><td>城管二队</td><td>今日 18:00</td></tr>
+          <tr><td>河道漂浮物整改</td><td>河道巡检</td><td><span class="badge danger">已超期</span></td><td>水务运维</td><td>昨日 17:00</td></tr>
+          <tr><td>园区围栏破损</td><td>园区安防</td><td><span class="badge info">整改中</span></td><td>园区物业</td><td>明日 12:00</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrapper footer-grid">
+    <div>
+      <div class="logo"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></div>
+      <p style="margin-top:12px">把“飞行行为”变成“治理流程”，把“现场照片”变成“隐患工单”。</p>
+    </div>
+    <div>演示日期：<span data-date></span><br/>适用场景：区县城管 / 河道巡检 / 园区运维 / 第三方巡检服务商</div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

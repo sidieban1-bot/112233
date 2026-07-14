@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>资源池管理｜低空巡检工单台账平台</title>
+<link rel="stylesheet" href="assets/style.css" />
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrapper nav">
+    <a class="logo" href="index.html"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></a>
+    <nav class="navlinks"><a class="" href="index.html">产品首页</a><a class="" href="dashboard.html">运营总览</a><a class="" href="tasks.html">任务台账</a><a class="" href="hazards.html">隐患工单</a><a class="active" href="resources.html">资源池</a><a class="" href="data.html">数据档案</a><a class="" href="reports.html">效能报表</a><a class="" href="pricing.html">试点与定价</a></nav>
+    <a class="btn primary" href="dashboard.html">进入演示系统</a>
+  </div>
+</header>
+
+
+<main class="wrapper">
+  <section class="page-title"><div class="kicker">RESOURCE POOL</div><h1>资源池管理</h1><p>把分散在各部门的无人机、飞手、航线和机巢变成可调度、可统计、可复盘的资源池。</p></section>
+  <div class="layout">
+    <aside class="sidebar"><a class="side-link " href="dashboard.html"><span>📊</span>运营总览</a><a class="side-link " href="tasks.html"><span>🧾</span>巡检任务台账</a><a class="side-link " href="hazards.html"><span>⚠️</span>隐患工单管理</a><a class="side-link active" href="resources.html"><span>🚁</span>资源池管理</a><a class="side-link " href="data.html"><span>🗂️</span>数据档案库</a><a class="side-link " href="reports.html"><span>📈</span>效能报表</a><a class="side-link " href="pricing.html"><span>💼</span>试点与定价</a></aside>
+    <section class="main-panel">
+      <div class="grid-3">
+        <div class="card"><div class="icon">🚁</div><h3>无人机资源表</h3><p>型号、续航、载荷、所属部门、状态、使用频次、维修记录。</p></div>
+        <div class="card"><div class="icon">🧑‍✈️</div><h3>飞手排班表</h3><p>资质等级、可执行场景、任务负荷、历史完成率、当前排班。</p></div>
+        <div class="card"><div class="icon">🛣️</div><h3>航线模板库</h3><p>适用场景、风险等级、审批要求、最近执行时间、重复航线识别。</p></div>
+      </div>
+      <div class="table-card">
+        <div class="table-head"><h3>无人机资源状态</h3><span class="tag">综合利用率 76%</span></div>
+        <table><thead><tr><th>设备编号</th><th>型号</th><th>所属部门</th><th>续航</th><th>状态</th><th>本月任务</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td>DJ-03</td><td>多旋翼 M30</td><td>城管</td><td>38min</td><td><span class="badge info">执行中</span></td><td>21</td><td>保持调度</td></tr>
+          <tr><td>DJ-07</td><td>多旋翼 M3E</td><td>水务</td><td>42min</td><td><span class="badge ok">可用</span></td><td>16</td><td>优先河道任务</td></tr>
+          <tr><td>DJ-12</td><td>四旋翼巡检版</td><td>园区</td><td>35min</td><td><span class="badge ok">可用</span></td><td>5</td><td>存在闲置，可跨场景调用</td></tr>
+          <tr><td>DJ-16</td><td>旧款巡检机</td><td>环保</td><td>26min</td><td><span class="badge warn">维修中</span></td><td>2</td><td>建议评估淘汰或维护</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrapper footer-grid">
+    <div>
+      <div class="logo"><span class="logo-mark">低</span><span>低空巡检工单台账平台</span></div>
+      <p style="margin-top:12px">把“飞行行为”变成“治理流程”，把“现场照片”变成“隐患工单”。</p>
+    </div>
+    <div>演示日期：<span data-date></span><br/>适用场景：区县城管 / 河道巡检 / 园区运维 / 第三方巡检服务商</div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
